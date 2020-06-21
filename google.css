@@ -1,32 +1,170 @@
-li#navbar{
-    display: inline;
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin: 0 0 100px;
+    font-family:arial,sans-serif;
+    font-size:small;
 
 }
 
-ul#navbar{
+
+
+li.navbar{
+    display: inline;
+    padding:15px;
+
+}
+
+div.navbar{
+    position:relative;
+    bottom:50px;
+    left:5px;
+    padding:35px;
+}
+
+div.gmail{
+    position:absolute;
+    left:-3em;
+}
+
+
+
+
+
+ul.navbar{
     list-style-type:none;
     padding:none;
-    border:none;
 }
 
-img#googleLogo{
+.navbar{
+    position: absolute;
+    right:0px;
+    padding:10px 10px;
+    font-size:19px;
+}
+
+.navbar a:link, .navbar a:visited{
+    text-decoration:none;
+    color:black
+
+}
+
+li.Languages a:link{
+    text-decoration:none;
+    color:blue;
+}
+
+li.Languages a:visited{
+    color:blue;
+}
+
+.languages a:hover{
+    text-decoration: underline;
+}
+
+li.Languages a{
+    width:11.11%;
+    display:inline-block !important;
+    padding: 0px 3.5px;
+}
+
+
+
+
+.center{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 
-ul#footer{
+.Languages li{
     list-style-type: none;
-    padding:none;
-    border:none;
+   /* border:medium none;  */  
+   /* display: block;*/
 }
 
-li#footer{
-    display:inline;
-}
-div #footer{
+.Languages ul{
     position: relative;
-    top : 50vw;
+    overflow: visible;
+    top:100%;
+    white-space: nowrap;
+
 }
+
+
+li.Languages{
+    display:inline-block;
+    
+}
+
+
+.Languages{
+    position: relative;
+    text-align: center;
+   /* width:100%;*/
+    left:0;
+    bottom:-55px;
+} 
+
+
+#logo{
+    position: relative;
+}
+
+#logo > .search {
+    position: fixed;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+input#search{
+    height:3em;
+}
+
+.search-btn{
+float:left;
+color:rgb(167, 164, 164);
+position:relative;
+bottom:0.4em;
+left:0.6em;
+}
+
+i.icon-search{
+    display: block;
+    font-size: 0.8em;
+}
+
+.logo img{
+    height:4em;
+    display:block;
+    margin: 0 auto;
+    padding:0px 0px 20px 0px;
+}
+
+div.searchbar{
+    position:relative;
+}
+
+input.searchbar{
+    height: 35px;
+    width:500px;
+    border:1px solid lightgrey;
+    border-collapse:seperate;
+    border-radius:40px ;
+    border-style:solid;
+    padding:2px 40px;
+}
+
+div.search-btn{
+    position:absolute;
+
+}
+
+
+
