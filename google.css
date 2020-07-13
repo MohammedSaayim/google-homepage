@@ -27,12 +27,19 @@ div.navbar{
 
 div.gmail{
     position:absolute;
-    left:-3em;
+    left:-4em;
 }
 
+li.images{
+    padding-right: 30px;
+}
 
-
-
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 ul.navbar{
     list-style-type:none;
@@ -43,13 +50,24 @@ ul.navbar{
     position: absolute;
     right:0px;
     padding:10px 10px;
-    font-size:19px;
+    font-size:17px;
 }
 
 .navbar a:link, .navbar a:visited{
     text-decoration:none;
     color:black
+}
 
+.navbar a:hover{
+  text-decoration:underline;
+}
+
+ul.Languages{
+  height:auto;
+  width:auto;
+  margin:0;
+  overflow: visible;
+  white-space: nowrap;
 }
 
 li.Languages a:link{
@@ -61,7 +79,7 @@ li.Languages a:visited{
     color:blue;
 }
 
-.languages a:hover{
+li.Languages a:hover{
     text-decoration: underline;
 }
 
@@ -71,45 +89,21 @@ li.Languages a{
     padding: 0px 3.5px;
 }
 
-
-
-
-.center{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.Languages li{
+li.Languages{
     list-style-type: none;
    /* border:medium none;  */  
-   /* display: block;*/
-}
-
-.Languages ul{
-    position: relative;
-    overflow: visible;
-    top:100%;
-    white-space: nowrap;
-
-}
-
-
-li.Languages{
     display:inline-block;
-    
 }
-
 
 .Languages{
-    position: relative;
     text-align: center;
-   /* width:100%;*/
-    left:0;
-    bottom:-55px;
+    position: relative;
+    
 } 
 
+div.Languages{
+  top:80px;
+}
 
 #logo{
     position: relative;
@@ -117,7 +111,7 @@ li.Languages{
 
 #logo > .search {
     position: fixed;
-    top:70%;
+    top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 
@@ -130,7 +124,7 @@ input#search{
 .search-btn{
 float:left;
 color:rgb(167, 164, 164);
-position:relative;
+position:absolute;
 bottom:0.4em;
 left:0.6em;
 }
@@ -149,6 +143,15 @@ i.icon-search{
 
 div.searchbar{
     position:relative;
+    background-color:white;
+    
+    
+}
+
+form.searchbar{
+  height: 35px;
+    width:500px;
+  padding: 2px 40px;
 }
 
 input.searchbar{
@@ -159,12 +162,91 @@ input.searchbar{
     border-radius:40px ;
     border-style:solid;
     padding:2px 40px;
+    position: relative;
+    left:9em;
+}
+
+input.searchbar:hover, input.searchbar:active, input.searchbar:focus{
+  box-shadow:0px 1.2px 5px 1px             rgba(0,0,0,0.2);
 }
 
 div.search-btn{
     position:absolute;
-
+    left:7em;
+    top:0.45em;
 }
 
+.footer li{
+    list-style-type: none; 
+  }
 
+  .India li{
+    margin: 15px;
+}
 
+  .India{
+      border-width:0.001em 0 0 0;
+      border-style:solid;
+      border-color: rgb(224, 224, 224);
+      max-height:100px;
+      height:50px;
+  
+  }
+
+  .ad{
+    border-width:0.1em 0 0 0;
+    border-style:solid;
+    border-color: rgb(224, 224, 224);
+    max-height:100px;
+    height:30px;
+    color:rgba(48, 47, 47, 0.795);
+}
+  
+  .footer{
+     overflow: hidden;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    color: rgba(48, 47, 47, 0.795);
+    font-size:0.7em;
+    background-color:#f3f3f3;
+  }
+  
+  .footer a{
+     float:left;
+     display:block;
+     color: rgba(48, 47, 47, 0.795);
+     text-decoration:none;
+     margin: 15px;
+     margin-top: 0;
+     overflow:hidden;
+  }
+
+  button {
+     padding: 1px;
+     width: 160px;
+     font-size: 16px;
+     color: rgba(48, 47, 47, 0.795);
+     height:40px;
+     background-color: #f3f3f3;
+     border: none;
+     border-radius:5px;
+     margin:10px;
+  }
+  
+
+    div.buttons{
+      height:40px;
+      margin:10px;
+      position: absolute;
+     transform: translate(-50%,0);
+     left: 50%; 
+   }
+
+  button:hover{
+      border-width:1px;
+      border-style: solid;
+      border-color: #f3f3f3;
+      background-color: #f8f8f8;
+      background-image: radial-gradient( #f8f8f8,#f6f6f6,#f3f3f3);
+  }
